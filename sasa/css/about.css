@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#landing-page {
+  background: linear-gradient(rgba(248, 245, 245, 0.1), rgba(59, 57, 57, 0.5)),
+    url(../images/about-hero.jpg);
+  height: 20vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  margin-top: 65px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  font-size: 2rem;
+}
+.title h2 {
+  color: aliceblue;
+}
+.about-img img {
+  width: 100%;
+  height: 300px;
+}
+#about {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.box {
+  width: 45%;
+}
+.about-content h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.about-content p {
+  line-height: 1.5;
+}

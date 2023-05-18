@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Orbitron:wght@400;500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* landing page */
+#landing{
+    background: linear-gradient(rgba(248, 245, 245, 0.1), rgba(59, 57, 57, 0.5)),
+    url(../images/about-hero.jpg);
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 65px;
+}
+.container{
+    padding-left: 40%;
+    padding-top: 3rem;
+    color: aliceblue;
+    
+}
+.container h1{
+    font-size: 2.5rem;
+}
+
+/* form */
+#paymentForm{
+    padding: 5% 8%;
+    margin-top: 3rem;
+
+}
+#paymentForm h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.images img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 40%;
+    
+}
+.form{
+    width: 100%;
+}
+.form  form input{
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    border: 0;
+    background: #eceef1;
+    column-rule: var(--colorblack);
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top:5px ;
+
+}
+.form button{
+    padding: 10px 40px;
+    color: var(--colorblack);
+    background-color:  var(--colorgreen);
+    border: 0;
+    border-radius: 2px;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    margin-left: 45%;
+
+
+}
+.form button:hover{
+    border: 1px solid var(--colorgreen);
+    color:var(--colorgreen);
+    background: var(--colorwhite);
+}
+.content{
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

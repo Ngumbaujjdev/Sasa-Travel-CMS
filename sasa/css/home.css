@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.image-container {
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-container h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.content-container .content-link {
+  margin-top: 20px;
+  text-align: center;
+}
+/*---effet---*/
+
+.content-container .content-link a {
+  border: 3px solid var(--colororange);
+  color: var(--colorblack);
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  font-size: 17pt;
+}
+
+.content-container .content-link a:hover {
+  color: var(--colorwhite);
+  background-color: var(--colororange);
+  border: 3px solid;
+  border-color: var(--colorgreen);
+  transition: 0.4s linear;
+}
+.content-container .content-link a::before,
+.content-container .content-link a::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background: var(--colorgreen);
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+.content-container .content-link a::before {
+  top: -4px;
+  left: 10%;
+}
+
+.content-container .content-link a::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.content-container .content-link a:hover::before {
+  left: 80%;
+}
+
+.content-container .content-link a:hover::after {
+  right: 80%;
+}
+
+/*---effet end---*/
+
+.content-container p {
+  text-align: center;
+}
+
+.content-container a {
+  border: 2px solid var(--colororange);
+  padding: 15px 28px;
+  margin-top: 1rem;
+  font-family: var(--font);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background-color: var(--btncolor);
+  text-decoration: none;
+  color: var(--colorwhite);
+  font-size: 1.5rem;
+}
+
+.content-container a:hover {
+  background-color: var(--colororange);
+}
+
+/*-----------Packages---------*/
+#packages h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 70px;
+  margin-bottom: 15px;
+}
+
+/*------Presentation------*/
+
+.package-container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: var(--colorwhite);
+}
+
+.p_container {
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0 40px;
+}
+
+.p_container .package {
+  position: relative;
+  background-color: var(--colorwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.p_container .package:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+}
+
+.p_container .package:nth-child(1):before {
+  background-color: linear-gradient(315deg, #ff0057, #e64a19);
+}
+.up-colour {
+  width: 100%;
+  height: 10px;
+  background-color: #000;
+}
+.content {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+}
+
+/*------Package photo------*/
+
+.package .content img {
+  position: relative;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 50%;
+  transition: 1s;
+  z-index: 0.9;
+  padding-top: 20px;
+  background-color: var(--colorgreen);
+  border-radius: 15px;
+}
+
+.package:hover .content img {
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 70%;
+}
+
+/*------Package title------*/
+
+.package .content h6 {
+  margin: 0 0 10px;
+  padding: 0px;
+  font-size: 15px;
+  color: var(--colorgreen);
+  transition: 1s;
+  font-family: var(--font);
+}
+
+.package:hover .content h6 {
+  color: var(--colororange);
+}
+
+/*------package text------*/
+
+.package .content p {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-size: 16px;
+  z-index: 1;
+}
+
+/*------location-duration start------*/
+
+.content .bottom {
+  padding: 10px;
+  width: 100%;
+}
+
+.bottom span {
+  color: var(--colorgreen);
+}
+.bottom table {
+  width: 100%;
+  margin-left: -5%;
+}
+
+.bottom .location-all span {
+  font-size: 13pt;
+}
+
+.bottom .duration-all span {
+  font-size: 13pt;
+}
+
+.bottom .price-all span {
+  font-size: 13pt;
+}
+
+/*------location-duration end------*/
+
+/*------Package buy now------*/
+
+.package .content a {
+  position: relative;
+  margin: 20 0px 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  display: inline-block;
+  color: var(--colorwhite);
+  transition: 0.5s;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.package:hover .content a {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.package .content a:hover {
+  color: var(--colorwhite);
+  background-color: var(--colororange);
+  border: 3px solid;
+  border-color: var(--colorgreen);
+}
+
+/*---effet---*/
+
+.package .content a {
+  border: 3px solid;
+  color: var(--colororange);
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.package .content a::before,
+.package .content a::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background: var(--colorgreen);
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+.package .content a::before {
+  top: -4px;
+  left: 10%;
+}
+
+.package .content a::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.package .content a:hover::before {
+  left: 80%;
+}
+
+.package .content a:hover::after {
+  right: 80%;
+}
+
+/*---effet---*/
+@media only screen and (max-width: 800px) {
+  .p_container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+  }
+}

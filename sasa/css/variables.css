@@ -1,0 +1,15 @@
+:root {
+    --color1: #ecf0f5;
+    --colorblack: #000;
+    --colororange:#ff9453;
+    --colorgreen:#208181;
+    --colorwhite:#fff;   
+    --f-black: 'Poppins', sans-serif;
+    --f-sserif: "Segoe UI", sans-serif;
+    --border: .1rem solid var(--black);
+    --box-shadow:2px 1px 5px #333333;
+}
+
+*{
+    font-family: sans-serif;
+}

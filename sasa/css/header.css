@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 1;
+    background-color: var(--colorgreen);
+    box-shadow: var(--box-shadow);
+}
+span{
+    color: aliceblue;
+}
+ion-icon{
+    padding-left: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--colorwhite);
+    transition: 0.2s;
+}
+
+ion-icon:hover{
+    color: var(--colororange);
+}
+nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(255,255,255);
+    transition: 0.2s;
+}
+nav a:hover{
+    color: var(--colororange);
+}
+.popup{
+    position: absolute;
+    background: var(--colorgreen);
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    top: 12%;
+    right: 2%;
+    padding-top: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(0);
+    z-index: 1000;
+    transition: 0.2s;
+}
+.popup.popup-active{
+    transform: scale(1);
+}
+.popup a{
+    text-decoration: none;
+    color: var(--colorwhite);
+    border-bottom: 2px solid var(--colorwhite);
+    font-size: 1rem;
+    padding-top: 10px;
+    transition: .2s;
+}
+.popup a:hover{
+    font-size: 1.2rem;
+    color: var(--colororange);
+}
